@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Farhan Printing Press offers wedding cards, visiting cards, digital printing, and more in Siddharth Nagar. Contact us for quality printing services!">
+    <meta name="keywords" content="printing services Siddharth Nagar, wedding cards, visiting cards, digital printing, bill books, letter pads, handbills, posters, envelopes">
+    <meta name="author" content="Farhan Printing Press">
+    <title>Farhan Printing Press</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://farhanprintpress.github.io/farhanprintpress/favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
+            background-size: 50px 50px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            transition: transform 0.3s;
+        }
+
+        .logo i {
+            color: #f1c40f;
+            font-size: 2rem;
+        }
+
+        .logo span {
+            font-weight: 700;
+        }
+
+        .logo span small {
+            font-weight: 300;
+            font-size: 1rem;
+            margin-left: 0.2rem;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .header-content {
+            text-align: center;
+            flex: 1;
+            padding: 0 2rem;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        nav {
+            background: #34495e;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        .hero {
+            position: relative;
+            background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin: 0.5rem 0 1rem;
+            position: relative;
+            z-index: 1;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .hero .cta-btn {
+            position: relative;
+            z-index: 1;
+            padding: 0.75rem 1.5rem;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .hero .cta-btn:hover {
+            background-color: #1ebe52;
+        }
+
+        .home-content {
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .home-content h3 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .home-content p {
+            font-size: 1rem;
+            color: #7f8c8d;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .home-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .highlight {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+        }
+
+        .highlight i {
+            font-size: 1.5rem;
+            color: #3498db;
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight p {
+            font-size: 0.9rem;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        .services {
+            padding: 3rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .service-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid transparent;
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            border-color: #f1c40f;
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+            transition: color 0.3s;
+        }
+
+        .service-card:hover i {
+            color: #f1c40f;
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        .contact {
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .contact p {
+            margin-bottom: 0.75rem;
+            font-weight: 300;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .contact a {
+            color: #f1c40f;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact a:hover {
+            color: #f39c12;
+        }
+
+        .contact i {
+            color: #f1c40f;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .contact i:hover {
+            color: #f39c12;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-weight: 300;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            max-height: 80vh;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .modal-content p {
+            margin-bottom: 1rem;
+            color: #7f8c8d;
+        }
+
+        .modal-content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 1rem;
+        }
+
+        .modal-content ul li {
+            margin-bottom: 0.5rem;
+            color: #7f8c8d;
+        }
+
+        .modal-options {
+            margin-top: 1rem;
+            flex-grow: 1;
+        }
+
+        .modal-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-option label {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #2c3e50;
+        }
+
+        .modal-option select,
+        .modal-option textarea {
+            padding: 0.5rem;
+            border: 1px solid #dfe6e9;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            width: 60%;
+            background: #f9f9f9;
+            transition: border-color 0.3s;
+        }
+
+        .modal-option textarea {
+            width: 60%;
+            resize: vertical;
+            min-height: 60px;
+        }
+
+        .modal-option select:focus,
+        .modal-option textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        .modal-price {
+            font-weight: 600;
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+
+        .whatsapp-btn {
+            display: block;
+            margin: 1rem 0 0;
+            padding: 0.75rem 1.5rem;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #1ebe52;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: #7f8c8d;
+            transition: color 0.3s;
+            z-index: 1001;
+        }
+
+        .close-btn:hover {
+            color: #e74c3c;
+        }
+
+        .whatsapp-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .whatsapp-chat:hover {
+            background-color: #1ebe52;
+            transform: scale(1.1);
+        }
+
+        .whatsapp-chat i {
+            font-size: 2rem;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .header-content {
+                padding: 0.5rem 0 0 0;
+            }
+
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .logo i {
+                font-size: 1.8rem;
+            }
+
+            nav {
+                padding: 0.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.75rem;
+                text-align: center;
+            }
+
+            nav a {
+                font-size: 1rem;
+                display: block;
+                padding: 0.5rem 1rem;
+            }
+
+            .hero {
+                height: 280px;
+            }
+
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 0.9rem;
+                margin: 0.4rem 0;
+            }
+
+            .hero .cta-btn {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+            }
+
+            .home-content {
+                padding: 1.5rem 0.5rem;
+            }
+
+            .home-content h3 {
+                font-size: 1.5rem;
+            }
+
+            .home-content p {
+                font-size: 0.9rem;
+            }
+
+            .highlight {
+                width: 100%;
+                max-width: 180px;
+                padding: 0.75rem;
+            }
+
+            .highlight i {
+                font-size: 1.2rem;
+            }
+
+            .highlight p {
+                font-size: 0.8rem;
+            }
+
+            .services {
+                padding: 2rem 0.5rem;
+            }
+
+            .services h2 {
+                font-size: 1.5rem;
+            }
+
+            .service-card {
+                width: 100%;
+                max-width: 260px;
+                padding: 1rem;
+            }
+
+            .service-card i {
+                font-size: 2rem;
+            }
+
+            .service-card h3 {
+                font-size: 1.1rem;
+            }
+
+            .service-card p {
+                font-size: 0.85rem;
+            }
+
+            .contact {
+                padding: 2rem 0.5rem;
+            }
+
+            .contact h2 {
+                font-size: 1.5rem;
+            }
+
+            .contact p {
+                font-size: 0.9rem;
+                gap: 0.4rem;
+            }
+
+            .contact a {
+                font-size: 0.9rem;
+            }
+
+            .contact i {
+                font-size: 1rem;
+            }
+
+            .contact .phone-numbers {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                margin: 0.5rem 0;
+            }
+
+            .modal-content {
+                padding: 1.5rem;
+                max-width: 90%;
+                max-height: 70vh;
+            }
+
+            .modal-content h3 {
+                font-size: 1.2rem;
+            }
+
+            .modal-content p {
+                font-size: 0.85rem;
+            }
+
+            .modal-content ul li {
+                font-size: 0.85rem;
+            }
+
+            .modal-option {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.3rem;
+            }
+
+            .modal-option label {
+                font-size: 0.85rem;
+            }
+
+            .modal-option select,
+            .modal-option textarea {
+                width: 100%;
+                font-size: 0.85rem;
+                padding: 0.4rem;
+            }
+
+            .modal-price {
+                font-size: 0.9rem;
+            }
+
+            .whatsapp-btn {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+                margin: 0.5rem 0;
+            }
+
+            .close-btn {
+                top: 10px;
+                right: 10px;
+                font-size: 1.5rem;
+            }
+
+            .whatsapp-chat {
+                width: 50px;
+                height: 50px;
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .whatsapp-chat i {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 0.75rem;
+            }
+
+            header h1 {
+                font-size: 1rem;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+            }
+
+            .logo i {
+                font-size: 1.5rem;
+            }
+
+            .logo span small {
+                font-size: 0.8rem;
+            }
+
+            nav {
+                padding: 0.5rem;
+            }
+
+            nav ul {
+                gap: 0.5rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                padding: 0.4rem 0.8rem;
+            }
+
+            .hero {
+                height: 240px;
+            }
+
+            .hero h2 {
+                font-size: 1.5rem;
+            }
+
+            .hero p {
+                font-size: 0.8rem;
+            }
+
+            .hero .cta-btn {
+                font-size: 0.8rem;
+                padding: 0.4rem 0.8rem;
+            }
+
+            .home-content {
+                padding: 1.2rem 0.5rem;
+            }
+
+            .home-content h3 {
+                font-size: 1.3rem;
+            }
+
+            .home-content p {
+                font-size: 0.85rem;
+            }
+
+            .highlight {
+                max-width: 160px;
+                padding: 0.6rem;
+            }
+
+            .highlight i {
+                font-size: 1rem;
+            }
+
+            .highlight p {
+                font-size: 0.75rem;
+            }
+
+            .services {
+                padding: 1.5rem 0.5rem;
+            }
+
+            .services h2 {
+                font-size: 1.3rem;
+            }
+
+            .service-grid {
+                gap: 1rem;
+            }
+
+            .service-card {
+                max-width: 240px;
+                padding: 0.8rem;
+            }
+
+            .service-card i {
+                font-size: 1.8rem;
+            }
+
+            .service-card h3 {
+                font-size: 1rem;
+            }
+
+            .service-card p {
+                font-size: 0.8rem;
+            }
+
+            .contact {
+                padding: 1.5rem 0.5rem;
+            }
+
+            .contact h2 {
+                font-size: 1.3rem;
+            }
+
+            .contact p {
+                font-size: 0.85rem;
+                gap: 0.3rem;
+            }
+
+            .contact a {
+                font-size: 0.85rem;
+            }
+
+            .contact i {
+                font-size: 0.9rem;
+            }
+
+            .contact .phone-numbers {
+                gap: 0.4rem;
+                margin: 0.4rem 0;
+            }
+
+            .modal-content {
+                padding: 1rem;
+                max-height: 65vh;
+            }
+
+            .modal-content h3 {
+                font-size: 1.1rem;
+            }
+
+            .modal-content p {
+                font-size: 0.8rem;
+            }
+
+            .modal-content ul li {
+                font-size: 0.8rem;
+            }
+
+            .modal-option label {
+                font-size: 0.8rem;
+            }
+
+            .modal-option select,
+            .modal-option textarea {
+                font-size: 0.8rem;
+                padding: 0.3rem;
+            }
+
+            .modal-price {
+                font-size: 0.85rem;
+            }
+
+            .whatsapp-btn {
+                font-size: 0.85rem;
+                padding: 0.4rem 0.8rem;
+                margin: 0.5rem 0;
+            }
+
+            .close-btn {
+                top: 8px;
+                right: 8px;
+                font-size: 1.3rem;
+            }
+
+            .whatsapp-chat {
+                width: 45px;
+                height: 45px;
+                bottom: 10px;
+                right: 10px;
+            }
+
+            .whatsapp-chat i {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            header {
+                padding: 0.5rem;
+            }
+
+            header h1 {
+                font-size: 0.9rem;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            .logo i {
+                font-size: 1.3rem;
+            }
+
+            .logo span small {
+                font-size: 0.7rem;
+            }
+
+            nav a {
+                font-size: 0.85rem;
+                padding: 0.3rem 0.6rem;
+            }
+
+            .hero {
+                height: 200px;
+            }
+
+            .hero h2 {
+                font-size: 1.3rem;
+            }
+
+            .hero p {
+                font-size: 0.75rem;
+                margin: 0.3rem 0;
+            }
+
+            .hero .cta-btn {
+                font-size: 0.75rem;
+                padding: 0.3rem 0.6rem;
+            }
+
+            .home-content {
+                padding: 1rem 0.3rem;
+            }
+
+            .home-content h3 {
+                font-size: 1.1rem;
+            }
+
+            .home-content p {
+                font-size: 0.8rem;
+            }
+
+            .highlight {
+                max-width: 140px;
+                padding: 0.5rem;
+            }
+
+            .highlight i {
+                font-size: 0.9rem;
+            }
+
+            .highlight p {
+                font-size: 0.7rem;
+            }
+
+            .services {
+                padding: 1rem 0.3rem;
+            }
+
+            .services h2 {
+                font-size: 1.1rem;
+            }
+
+            .service-grid {
+                gap: 0.8rem;
+            }
+
+            .service-card {
+                max-width: 100%;
+                padding: 0.6rem;
+            }
+
+            .service-card i {
+                font-size: 1.5rem;
+            }
+
+            .service-card h3 {
+                font-size: 0.9rem;
+            }
+
+            .service-card p {
+                font-size: 0.75rem;
+            }
+
+            .contact {
+                padding: 1rem 0.3rem;
+            }
+
+            .contact h2 {
+                font-size: 1.1rem;
+            }
+
+            .contact p {
+                font-size: 0.8rem;
+                gap: 0.25rem;
+            }
+
+            .contact a {
+                font-size: 0.8rem;
+            }
+
+            .contact i {
+                font-size: 0.85rem;
+            }
+
+            .modal-content {
+                padding: 0.8rem;
+                max-height: 60vh;
+            }
+
+            .modal-content h3 {
+                font-size: 1rem;
+            }
+
+            .modal-content p {
+                font-size: 0.75rem;
+            }
+
+            .modal-content ul li {
+                font-size: 0.75rem;
+            }
+
+            .modal-option label {
+                font-size: 0.75rem;
+            }
+
+            .modal-option select,
+            .modal-option textarea {
+                font-size: 0.75rem;
+                padding: 0.25rem;
+            }
+
+            .modal-price {
+                font-size: 0.8rem;
+            }
+
+            .whatsapp-btn {
+                font-size: 0.8rem;
+                padding: 0.3rem 0.6rem;
+                margin: 0.5rem 0;
+            }
+
+            .close-btn {
+                top: 6px;
+                right: 6px;
+                font-size: 1.2rem;
+            }
+
+            .whatsapp-chat {
+                width: 40px;
+                height: 40px;
+                bottom: 8px;
+                right: 8px;
+            }
+
+            .whatsapp-chat i {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-print"></i>
+            <span>Farhan <small>Printing Press</small></span>
+        </div>
+        <div class="header-content">
+            <h1>Quality Printing Services in Siddharth Nagar</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#track-order">Track Order</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="hero" alt="Printing press hero image">
+        <h2>Your One-Stop Print Solution</h2>
+        <p>From Wedding Cards to Digital Printing – We Bring Your Ideas to Life!</p>
+        <a href="https://wa.me/+919838644687?text=Hello%2C%20I%20want%20to%20learn%20more%20about%20your%20printing%20services%21" target="_blank" class="cta-btn">Contact Us on WhatsApp</a>
+    </section>
+    <section class="home-content">
+        <h3>Welcome to Farhan Printing Press</h3>
+        <p>Based in Siddharth Nagar, Farhan Printing Press has been providing high-quality printing and stationery services for over a decade. Whether you need elegant wedding cards, professional visiting cards, or customized digital printing, we’re here to deliver exceptional results with a fast turnaround.</p>
+        <div class="home-highlights">
+            <div class="highlight">
+                <i class="fas fa-clock"></i>
+                <p>Over 10 Years of Experience</p>
+            </div>
+            <div class="highlight">
+                <i class="fas fa-star"></i>
+                <p>High-Quality Printing</p>
+            </div>
+            <div class="highlight">
+                <i class="fas fa-shipping-fast"></i>
+                <p>Fast Turnaround</p>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card" onclick="openModal('wedding')">
+                <i class="fas fa-ring"></i>
+                <h3>Wedding Card Printing</h3>
+                <p>Elegant and customizable wedding cards.</p>
+            </div>
+            <div class="service-card" onclick="openModal('visiting')">
+                <i class="fas fa-address-card"></i>
+                <h3>Visiting Card</h3>
+                <p>Professional visiting cards for lasting impressions.</p>
+            </div>
+            <div class="service-card" onclick="openModal('digital')">
+                <i class="fas fa-print"></i>
+                <h3>Digital Printing</h3>
+                <p>Fast and cost-effective digital printing.</p>
+            </div>
+            <div class="service-card" onclick="openModal('bill')">
+                <i class="fas fa-file-invoice"></i>
+                <h3>Bill Book Printing</h3>
+                <p>Customized bill books for your business.</p>
+            </div>
+            <div class="service-card" onclick="openModal('letter')">
+                <i class="fas fa-file-alt"></i>
+                <h3>Letter Pad Printing</h3>
+                <p>Personalized letter pads with your logo.</p>
+            </div>
+            <div class="service-card" onclick="openModal('handbill')">
+                <i class="fas fa-newspaper"></i>
+                <h3>Handbill/Pamphlet</h3>
+                <p>Promotional handbills and pamphlets.</p>
+            </div>
+            <div class="service-card" onclick="openModal('poster')">
+                <i class="fas fa-image"></i>
+                <h3>Poster</h3>
+                <p>Eye-catching posters for promotions.</p>
+            </div>
+            <div class="service-card" onclick="openModal('envelope')">
+                <i class="fas fa-envelope"></i>
+                <h3>Envelope Printing</h3>
+                <p>Customized envelopes for your business.</p>
+            </div>
+        </div>
+    </section>
+    <section id="track-order" class="services">
+        <h2>Track Your Order</h2>
+        <div class="service-grid">
+            <div class="service-card" onclick="window.open('https://wa.me/+919838644687?text=I%20want%20to%20track%20my%20order', '_blank')">
+                <i class="fas fa-truck"></i>
+                <h3>Track Your Order</h3>
+                <p>Check the status of your order via WhatsApp.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/MoK3G1FZXpAs1Wb79" target="_blank">Near SBI Bank, Belauha Bazar, Siddharth Nagar</a></p>
+        <p><i class="fas fa-phone"></i> Call Us</p>
+        <div class="phone-numbers">
+            <a href="tel:+919935644687">+91 99356 44687</a>
+            <a href="tel:+919838644687">+91 98386 44687</a>
+            <a href="tel:+919140242441">+91 91402 42441</a>
+        </div>
+        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+919838644687" target="_blank">WhatsApp Us</a></p>
+        <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/farhan_printing_press?igsh=c3E4dWE3bmF0bWFu" target="_blank">Follow us on Instagram</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:farhanprintpress@gmail.com">farhanprintpress@gmail.com</a></p>
+    </section>
+    <footer>
+        <p>© 2025 Farhan Printing Press. All rights reserved.</p>
+    </footer>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">×</span>
+            <h3 id="modal-title"></h3>
+            <div id="modal-description"></div>
+            <div id="modal-price-display" class="modal-price"></div>
+        </div>
+    </div>
+    <a href="https://wa.me/+919838644687?text=Hello%2C%20I%20have%20a%20question%20about%20your%20printing%20services%21" target="_blank" class="whatsapp-chat">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script>
+        const translations = {
+            en: {
+                title: "Farhan Printing Press",
+                logo: "Farhan <small>Printing Press</small>",
+                "header-title": "Quality Printing Services in Siddharth Nagar",
+                "nav-home": "Home",
+                "nav-services": "Services",
+                "nav-track-order": "Track Order",
+                "nav-contact": "Contact",
+                "hero-title": "Your One-Stop Print Solution",
+                "hero-subtitle": "From Wedding Cards to Digital Printing – We Bring Your Ideas to Life!",
+                "hero-cta": "Contact Us on WhatsApp",
+                "home-title": "Welcome to Farhan Printing Press",
+                "home-description": "Based in Siddharth Nagar, Farhan Printing Press has been providing high-quality printing and stationery services for over a decade. Whether you need elegant wedding cards, professional visiting cards, or customized digital printing, we’re here to deliver exceptional results with a fast turnaround.",
+                "highlight-experience": "Over 10 Years of Experience",
+                "highlight-quality": "High-Quality Printing",
+                "highlight-turnaround": "Fast Turnaround",
+                "services-title": "Our Services",
+                "service-wedding": "Wedding Card Printing",
+                "service-wedding-desc": "Elegant and customizable wedding cards.",
+                "service-visiting": "Visiting Card",
+                "service-visiting-desc": "Professional visiting cards for lasting impressions.",
+                "service-digital": "Digital Printing",
+                "service-digital-desc": "Fast and cost-effective digital printing.",
+                "service-bill": "Bill Book Printing",
+                "service-bill-desc": "Customized bill books for your business.",
+                "service-letter": "Letter Pad Printing",
+                "service-letter-desc": "Personalized letter pads with your logo.",
+                "service-handbill": "Handbill/Pamphlet",
+                "service-handbill-desc": "Promotional handbills and pamphlets.",
+                "service-poster": "Poster",
+                "service-poster-desc": "Eye-catching posters for promotions.",
+                "service-envelope": "Envelope Printing",
+                "service-envelope-desc": "Customized envelopes for your business.",
+                "track-order-title": "Track Your Order",
+                "track-order": "Track Your Order",
+                "track-order-desc": "Check the status of your order via WhatsApp.",
+                "contact-title": "Contact Us",
+                "contact-address": "Near SBI Bank, Belauha Bazar, Siddharth Nagar",
+                "contact-call": "Call Us",
+                "contact-whatsapp": "WhatsApp Us",
+                "contact-instagram": "Follow us on Instagram",
+                footer: "© 2025 Farhan Printing Press. All rights reserved.",
+                "wedding-title": "Wedding Card Printing",
+                "wedding-description": `
+                    <p>Design your perfect wedding card with Farhan Printing Press. Please provide the following details to help us create a card that matches your vision:</p>
+                    <ul>
+                        <li><strong>Size:</strong> Standard (5 x 7 inches) or custom dimensions</li>
+                        <li><strong>Minimum Order:</strong> 50 units</li>
+                    </ul>
+                    <p>Select your preferences below, then click the button to send your request via WhatsApp.</p>
+                `,
+                "wedding-whatsapp": "Send via WhatsApp",
+                "visiting-title": "Visiting Card",
+                "visiting-description": `
+                    <p>Make a lasting impression with our Visiting Cards, designed to communicate your professional identity effectively.</p>
+                    <ul>
+                        <li><strong>Size:</strong> 3.5 x 2 inches</li>
+                        <li><strong>Minimum Order:</strong> 100 units</li>
+                    </ul>
+                    <p>Select your preferences below, then click the button to send your request via WhatsApp.</p>
+                `,
+                "visiting-whatsapp": "Send via WhatsApp",
+                "digital-title": "Digital Printing",
+                "digital-description": `
+                    <p>Fast and cost-effective Digital Printing services for a variety of needs, from flyers to brochures.</p>
+                    <ul>
+                        <li><strong>Size:</strong> A4, A5, or custom dimensions</li>
+                        <li><strong>Minimum Order:</strong> 10 units</li>
+                    </ul>
+                    <p class="modal-price">Starting at ₹10 per page for 10 units (final price depends on selections).</p>
+                    <p>Select your preferences below, then click the button to send your request via WhatsApp.</p>
+                `,
+                "digital-whatsapp": "Send via WhatsApp",
+                "bill-title": "Bill Book Printing",
+                "bill-description": `
+                    <p>Customized bill books designed for your business, ensuring a professional look for invoices.</p>
+                    <ul>
+                        <li><strong>Size:</strong> A5, A4, or Custom</li>
+                        <li><strong>Minimum Order:</strong> 5 books (50 sheets per book)</li>
+                    </ul>
+                    <p>Select your preferences below, then click the button to send your request via WhatsApp.</p>
+                `,
+                "bill-whatsapp": "Send via WhatsApp",
+                "letter-title": "Letter Pad Printing",
+                "letter-description": `
+                    <p>Personalized letter pads with your company logo and details, ideal for official correspondence.</p>
+                    <ul>
+                        <li><strong>Size:</strong> A4, A5, or Legal</li>
+                        <li><strong>Minimum Order:</strong> 100 sheets</li>
+                    </ul>
+                    <p>Select your preferences below, then click the button to send your request via WhatsApp.</p>
+                `,
+                "letter-whatsapp": "Send via WhatsApp",
+                "handbill-title": "Handbill/Pamphlet",
+                "handbill-description": `
+                    <p>Promotional handbills and pamphlets to effectively market your business or event.</p>
+                    <ul>
+                        <li><strong>Size:</strong> A5, A4, or A3</li>
+                        <li><strong>Minimum Order:</strong> 100 units</li>
+                    </ul>
+                    <p>Select your preferences below, then click the button to send your request via WhatsApp.</p>
+                `,
+                "handbill-whatsapp": "Send via WhatsApp",
+                "poster-title": "Poster",
+                "poster-description": `
+                    <p>Eye-catching posters for promotions, events, or advertisements.</p>
+                    <ul>
+                        <li><strong>Size:</strong> A3, A2, or A1</li>
+                        <li><strong>Minimum Order:</strong> 1 unit</li>
+                    </ul>
+                    <p>Select your preferences below, then click the button to send your request via WhatsApp.</p>
+                `,
+                "poster-whatsapp": "Send via WhatsApp",
+                "envelope-title": "Envelope Printing",
+                "envelope-description": `
+                    <p>Customized envelopes with your business logo and details.</p>
+                    <ul>
+                        <li><strong>Size:</strong> Standard (4 x 9 inches), C5, or C4</li>
+                        <li><strong>Minimum Order:</strong> 100 units</li>
+                    </ul>
+                    <p>Select your preferences below, then click the button to send your request via WhatsApp.</p>
+                `,
+                "envelope-whatsapp": "Send via WhatsApp",
+                "label-price-range": "Price Range (per unit)",
+                "label-quantity": "Quantity",
+                "label-size": "Size",
+                "label-paper-quality": "Paper Quality",
+                "label-design-style": "Design Style",
+                "label-finishing": "Finishing",
+                "label-orientation": "Orientation",
+                "label-quantity": "Quantity",
+                "label-lamination": "Lamination",
+                "label-printing-location": "Printing Location",
+                "label-material": "Material",
+                "label-binding": "Binding Type",
+                "label-sheets-per-book": "Sheets per Book",
+                "label-quantity-books": "Quantity (Books)",
+                "label-quantity-sheets": "Quantity (Sheets)",
+                "label-card-category": "Card Category",
+                "label-printing-sides": "Printing",
+                "label-printing": "Printing",
+                "label-name": "Your Name"
+            }
+        };
+
+        const modal = document.getElementById('modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+        const modalPriceDisplay = document.getElementById('modal-price-display');
+
+        const visitingCardPricing = {
+            "Normal Visiting Card": {
+                "1 Side": { 100: 150, 200: 250, 500: 500, 1000: 800 },
+                "2 Sides": { 100: 200, 200: 350, 500: 750, 1000: 1100 }
+            },
+            "UV Card": {
+                "1 Side": { 1000: 2000, 2000: 3500 },
+                "2 Sides": { 1000: 2300, 2000: 4500 }
+            },
+            "Gloss Laminated Card": {
+                "1 side printing + 1 side lamination": { 100: 220, 200: 350, 500: 550, 1000: 600, 2000: 1150, 5000: 2500, 10000: 4500 },
+                "2 side printing + 2 side lamination": { 100: 350, 200: 450, 500: 650, 1000: 950 }
+            },
+            "Plastic Visiting Card": {
+                "with lamination": { 1000: 1200, 2000: 2200 },
+                "without lamination": { 1000: 1000, 2000: 1900 }
+            },
+            "Texture + Lamination Visiting Card": {
+                "1 Side": { 1000: 1500, 2000: 2800 },
+                "2 Sides": { 1000: 1700, 2000: 3200 }
+            },
+            "Gold Foil Visiting Card": {
+                "1 Side": { 500: 2300, 1000: 3400 },
+                "2 Sides": { 500: 2700, 1000: 3900 }
+            }
+        };
+
+        const billBookPricing = {
+            "A5_70 GSM_Gum Binding_50": { 5: 300, 10: 550, 20: 1000, 50: 2200 },
+            "A4_80 GSM_Staple Binding_100": { 5: 500, 10: 900, 20: 1600, 50: 3500 },
+            "Custom_100 GSM_Perfect Binding_150": { 5: 800, 10: 1400, 20: 2600, 50: 5000 }
+        };
+
+        const letterPadPricing = {
+            "A4_80 GSM_Header Only": { 100: 150, 200: 280, 500: 650, 1000: 1200 },
+            "A5_100 GSM_Header and Footer": { 100: 180, 200: 340, 500: 800, 1000: 1500 },
+            "Legal_120 GSM_Full Page": { 100: 250, 200: 480, 500: 1100, 1000: 2000 }
+        };
+
+        const handbillPricing = {
+            "A5_80 GSM_1 Side": { 100: 200, 500: 800, 1000: 1500, 2000: 2800 },
+            "A4_100 GSM_2 Sides": { 100: 350, 500: 1400, 1000: 2600, 2000: 5000 },
+            "A3_130 GSM_1 Side": { 100: 500, 500: 2000, 1000: 3800, 2000: 7000 }
+        };
+
+        const posterPricing = {
+            "A3_Matte Paper_None": { 1: 100, 5: 450, 10: 800, 20: 1500 },
+            "A2_Glossy Paper_Matte": { 1: 200, 5: 900, 10: 1600, 20: 3000 },
+            "A1_Vinyl_Glossy": { 1: 400, 5: 1800, 10: 3200, 20: 6000 }
+        };
+
+        const envelopePricing = {
+            "Standard_90 GSM_Front Only": { 100: 150, 200: 280, 500: 650, 1000: 1200 },
+            "C5_120 GSM_Front and Back": { 100: 200, 200: 380, 500: 900, 1000: 1700 },
+            "C4_90 GSM_Front Only": { 100: 250, 200: 480, 500: 1100, 1000: 2000 }
+        };
+
+        const services = {
+            wedding: {
+                title: "wedding-title",
+                description: `
+                    ${translations.en["wedding-description"]}
+                    <div class="modal-options">
+                        <div class="modal-option">
+                            <label for="price-range-wedding">${translations.en["label-price-range"]}</label>
+                            <select id="price-range-wedding" name="price_range">
+                                <option value="7-10 rupees">7-10 rupees</option>
+                                <option value="10-20 rupees">10-20 rupees</option>
+                                <option value="20-30 rupees">20-30 rupees</option>
+                                <option value="30-40 rupees">30-40 rupees</option>
+                                <option value="40-50 rupees">40-50 rupees</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="quantity-wedding">${translations.en["label-quantity"]}</label>
+                            <select id="quantity-wedding" name="quantity">
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="150">150</option>
+                                <option value="200">200</option>
+                                <option value="250">250</option>
+                                <option value="300">300</option>
+                                <option value="350">350</option>
+                                <option value="400">400</option>
+                                <option value="450">450</option>
+                                <option value="500">500</option>
+                            </select>
+                        </div>
+                    </div>
+                    <a href="#" class="whatsapp-btn" onclick="sendWhatsApp('wedding')">${translations.en["wedding-whatsapp"]}</a>
+                `
+            },
+            visiting: {
+                title: "visiting-title",
+                description: `
+                    ${translations.en["visiting-description"]}
+                    <div class="modal-options">
+                        <div class="modal-option">
+                            <label for="customer-name-visiting">${translations.en["label-name"]}</label>
+                            <textarea id="customer-name-visiting" name="customer_name" placeholder="Enter your name"></textarea>
+                        </div>
+                        <div class="modal-option">
+                            <label for="card-category-visiting">${translations.en["label-card-category"]}</label>
+                            <select id="card-category-visiting" name="card_category" onchange="updateVisitingCardOptions()">
+                                <option value="Normal Visiting Card">Normal Visiting Card</option>
+                                <option value="UV Card">UV Card</option>
+                                <option value="Gloss Laminated Card">Gloss Laminated Card</option>
+                                <option value="Plastic Visiting Card">Plastic Visiting Card</option>
+                                <option value="Texture + Lamination Visiting Card">Texture + Lamination Visiting Card</option>
+                                <option value="Gold Foil Visiting Card">Gold Foil Visiting Card</option>
+                            </select>
+                        </div>
+                        <div id="visiting-card-options"></div>
+                    </div>
+                    <a href="#" class="whatsapp-btn" onclick="sendWhatsApp('visiting')">${translations.en["visiting-whatsapp"]}</a>
+                `
+            },
+            digital: {
+                title: "digital-title",
+                description: `
+                    ${translations.en["digital-description"]}
+                    <div class="modal-options">
+                        <div class="modal-option">
+                            <label for="size-digital">${translations.en["label-size"]}</label>
+                            <select id="size-digital" name="size">
+                                <option value="A4">A4</option>
+                                <option value="A5">A5</option>
+                                <option value="Custom">Custom</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="paper-quality-digital">${translations.en["label-paper-quality"]}</label>
+                            <select id="paper-quality-digital" name="paper_quality">
+                                <option value="70 GSM">70 GSM</option>
+                                <option value="100 GSM">100 GSM</option>
+                                <option value="Glossy Paper">Glossy Paper</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="printing-sides-digital">${translations.en["label-printing-sides"]}</label>
+                            <select id="printing-sides-digital" name="printing_sides">
+                                <option value="1 Side">1 Side</option>
+                                <option value="2 Sides">2 Sides</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="quantity-digital">${translations.en["label-quantity"]}</label>
+                            <select id="quantity-digital" name="quantity">
+                                <option value="10">10</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                            </select>
+                        </div>
+                    </div>
+                    <a href="#" class="whatsapp-btn" onclick="sendWhatsApp('digital')">${translations.en["digital-whatsapp"]}</a>
+                `
+            },
+            bill: {
+                title: "bill-title",
+                description: `
+                    ${translations.en["bill-description"]}
+                    <div class="modal-options">
+                        <div class="modal-option">
+                            <label for="size-bill">${translations.en["label-size"]}</label>
+                            <select id="size-bill" name="size" onchange="calculateBillBookPrice()">
+                                <option value="A5">A5</option>
+                                <option value="A4">A4</option>
+                                <option value="Custom">Custom</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="paper-quality-bill">${translations.en["label-paper-quality"]}</label>
+                            <select id="paper-quality-bill" name="paper_quality" onchange="calculateBillBookPrice()">
+                                <option value="70 GSM">70 GSM</option>
+                                <option value="80 GSM">80 GSM</option>
+                                <option value="100 GSM">100 GSM</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="binding-bill">${translations.en["label-binding"]}</label>
+                            <select id="binding-bill" name="binding" onchange="calculateBillBookPrice()">
+                                <option value="Gum Binding">Gum Binding</option>
+                                <option value="Staple Binding">Staple Binding</option>
+                                <option value="Perfect Binding">Perfect Binding</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="sheets-per-book-bill">${translations.en["label-sheets-per-book"]}</label>
+                            <select id="sheets-per-book-bill" name="sheets_per_book" onchange="calculateBillBookPrice()">
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="150">150</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="quantity-bill">${translations.en["label-quantity-books"]}</label>
+                            <select id="quantity-bill" name="quantity" onchange="calculateBillBookPrice()">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="50">50</option>
+                            </select>
+                        </div>
+                    </div>
+                    <a href="#" class="whatsapp-btn" onclick="sendWhatsApp('bill')">${translations.en["bill-whatsapp"]}</a>
+                `
+            },
+            letter: {
+                title: "letter-title",
+                description: `
+                    ${translations.en["letter-description"]}
+                    <div class="modal-options">
+                        <div class="modal-option">
+                            <label for="size-letter">${translations.en["label-size"]}</label>
+                            <select id="size-letter" name="size" onchange="calculateLetterPadPrice()">
+                                <option value="A4">A4</option>
+                                <option value="A5">A5</option>
+                                <option value="Legal">Legal</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="paper-quality-letter">${translations.en["label-paper-quality"]}</label>
+                            <select id="paper-quality-letter" name="paper_quality" onchange="calculateLetterPadPrice()">
+                                <option value="80 GSM">80 GSM</option>
+                                <option value="100 GSM">100 GSM</option>
+                                <option value="120 GSM">120 GSM</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="printing-location-letter">${translations.en["label-printing-location"]}</label>
+                            <select id="printing-location-letter" name="printing_location" onchange="calculateLetterPadPrice()">
+                                <option value="Header Only">Header Only</option>
+                                <option value="Header and Footer">Header and Footer</option>
+                                <option value="Full Page">Full Page</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="quantity-letter">${translations.en["label-quantity-sheets"]}</label>
+                            <select id="quantity-letter" name="quantity" onchange="calculateLetterPadPrice()">
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <a href="#" class="whatsapp-btn" onclick="sendWhatsApp('letter')">${translations.en["letter-whatsapp"]}</a>
+                `
+            },
+            handbill: {
+                title: "handbill-title",
+                description: `
+                    ${translations.en["handbill-description"]}
+                    <div class="modal-options">
+                        <div class="modal-option">
+                            <label for="size-handbill">${translations.en["label-size"]}</label>
+                            <select id="size-handbill" name="size" onchange="calculateHandbillPrice()">
+                                <option value="A5">A5</option>
+                                <option value="A4">A4</option>
+                                <option value="A3">A3</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="paper-quality-handbill">${translations.en["label-paper-quality"]}</label>
+                            <select id="paper-quality-handbill" name="paper_quality" onchange="calculateHandbillPrice()">
+                                <option value="80 GSM">80 GSM</option>
+                                <option value="100 GSM">100 GSM</option>
+                                <option value="130 GSM">130 GSM</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="printing-sides-handbill">${translations.en["label-printing-sides"]}</label>
+                            <select id="printing-sides-handbill" name="printing_sides" onchange="calculateHandbillPrice()">
+                                <option value="1 Side">1 Side</option>
+                                <option value="2 Sides">2 Sides</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="quantity-handbill">${translations.en["label-quantity"]}</label>
+                            <select id="quantity-handbill" name="quantity" onchange="calculateHandbillPrice()">
+                                <option value="100">100</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                                <option value="2000">2000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <a href="#" class="whatsapp-btn" onclick="sendWhatsApp('handbill')">${translations.en["handbill-whatsapp"]}</a>
+                `
+            },
+            poster: {
+                title: "poster-title",
+                description: `
+                    ${translations.en["poster-description"]}
+                    <div class="modal-options">
+                        <div class="modal-option">
+                            <label for="size-poster">${translations.en["label-size"]}</label>
+                            <select id="size-poster" name="size" onchange="calculatePosterPrice()">
+                                <option value="A3">A3</option>
+                                <option value="A2">A2</option>
+                                <option value="A1">A1</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="material-poster">${translations.en["label-material"]}</label>
+                            <select id="material-poster" name="material" onchange="calculatePosterPrice()">
+                                <option value="Matte Paper">Matte Paper</option>
+                                <option value="Glossy Paper">Glossy Paper</option>
+                                <option value="Vinyl">Vinyl</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="lamination-poster">${translations.en["label-lamination"]}</label>
+                            <select id="lamination-poster" name="lamination" onchange="calculatePosterPrice()">
+                                <option value="None">None</option>
+                                <option value="Matte">Matte</option>
+                                <option value="Glossy">Glossy</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="quantity-poster">${translations.en["label-quantity"]}</label>
+                            <select id="quantity-poster" name="quantity" onchange="calculatePosterPrice()">
+                                <option value="1">1</option>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                            </select>
+                        </div>
+                    </div>
+                    <a href="#" class="whatsapp-btn" onclick="sendWhatsApp('poster')">${translations.en["poster-whatsapp"]}</a>
+                `
+            },
+            envelope: {
+                title: "envelope-title",
+                description: `
+                    ${translations.en["envelope-description"]}
+                    <div class="modal-options">
+                        <div class="modal-option">
+                            <label for="size-envelope">${translations.en["label-size"]}</label>
+                            <select id="size-envelope" name="size" onchange="calculateEnvelopePrice()">
+                                <option value="Standard">Standard (4 x 9 inches)</option>
+                                <option value="C5">C5</option>
+                                <option value="C4">C4</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="paper-quality-envelope">${translations.en["label-paper-quality"]}</label>
+                            <select id="paper-quality-envelope" name="paper_quality" onchange="calculateEnvelopePrice()">
+                                <option value="90 GSM">90 GSM</option>
+                                <option value="120 GSM">120 GSM</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="printing-location-envelope">${translations.en["label-printing-location"]}</label>
+                            <select id="printing-location-envelope" name="printing_location" onchange="calculateEnvelopePrice()">
+                                <option value="Front Only">Front Only</option>
+                                <option value="Front and Back">Front and Back</option>
+                            </select>
+                        </div>
+                        <div class="modal-option">
+                            <label for="quantity-envelope">${translations.en["label-quantity"]}</label>
+                            <select id="quantity-envelope" name="quantity" onchange="calculateEnvelopePrice()">
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="500">500</option>
+                                <option value="1000">1000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <a href="#" class="whatsapp-btn" onclick="sendWhatsApp('envelope')">${translations.en["envelope-whatsapp"]}</a>
+                `
+            }
+        };
+
+        function updateVisitingCardOptions() {
+            const cardCategory = document.getElementById('card-category-visiting').value;
+            const optionsContainer = document.getElementById('visiting-card-options');
+            let optionsHTML = '';
+
+            if (cardCategory === 'Normal Visiting Card') {
+                optionsHTML = `
+                    <div class="modal-option">
+                        <label for="printing-sides-visiting">${translations.en["label-printing"]}</label>
+                        <select id="printing-sides-visiting" name="printing_sides" onchange="calculateVisitingCardPrice()">
+                            <option value="1 Side">1 Side</option>
+                            <option value="2 Sides">2 Sides</option>
+                        </select>
+                    </div>
+                    <div class="modal-option">
+                        <label for="quantity-visiting">${translations.en["label-quantity"]}</label>
+                        <select id="quantity-visiting" name="quantity" onchange="calculateVisitingCardPrice()">
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="500">500</option>
+                            <option value="1000">1000</option>
+                        </select>
+                    </div>
+                `;
+            } else if (cardCategory === 'UV Card') {
+                optionsHTML = `
+                    <div class="modal-option">
+                        <label for="printing-sides-visiting">${translations.en["label-printing"]}</label>
+                        <select id="printing-sides-visiting" name="printing_sides" onchange="calculateVisitingCardPrice()">
+                            <option value="1 Side">1 Side</option>
+                            <option value="2 Sides">2 Sides</option>
+                        </select>
+                    </div>
+                    <div class="modal-option">
+                        <label for="quantity-visiting">${translations.en["label-quantity"]}</label>
+                        <select id="quantity-visiting" name="quantity" onchange="calculateVisitingCardPrice()">
+                            <option value="1000">1000</option>
+                            <option value="2000">2000</option>
+                        </select>
+                    </div>
+                `;
+            } else if (cardCategory === 'Gloss Laminated Card') {
+                optionsHTML = `
+                    <div class="modal-option">
+                        <label for="printing-sides-visiting">${translations.en["label-printing"]}</label>
+                        <select id="printing-sides-visiting" name="printing_sides" onchange="calculateVisitingCardPrice()">
+                            <option value="1 side printing + 1 side lamination">1 side printing + 1 side lamination</option>
+                            <option value="2 side printing + 2 side lamination">2 side printing + 2 side lamination</option>
+                        </select>
+                    </div>
+                    <div class="modal-option">
+                        <label for="quantity-visiting">${translations.en["label-quantity"]}</label>
+                        <select id="quantity-visiting" name="quantity" onchange="calculateVisitingCardPrice()">
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="500">500</option>
+                            <option value="1000">1000</option>
+                            <option value="2000">2000</option>
+                            <option value="5000">5000</option>
+                            <option value="10000">10000</option>
+                        </select>
+                    </div>
+                `;
+            } else if (cardCategory === 'Plastic Visiting Card') {
+                optionsHTML = `
+                    <div class="modal-option">
+                        <label>${translations.en["label-printing"]}</label>
+                        <span>1 Side</span>
+                    </div>
+                    <div class="modal-option">
+                        <label for="lamination-visiting">${translations.en["label-lamination"]}</label>
+                        <select id="lamination-visiting" name="lamination" onchange="calculateVisitingCardPrice()">
+                            <option value="with lamination">With Lamination</option>
+                            <option value="without lamination">Without Lamination</option>
+                        </select>
+                    </div>
+                    <div class="modal-option">
+                        <label for="quantity-visiting">${translations.en["label-quantity"]}</label>
+                        <select id="quantity-visiting" name="quantity" onchange="calculateVisitingCardPrice()">
+                            <option value="1000">1000</option>
+                            <option value="2000">2000</option>
+                        </select>
+                    </div>
+                `;
+            } else if (cardCategory === 'Texture + Lamination Visiting Card') {
+                optionsHTML = `
+                    <div class="modal-option">
+                        <label for="printing-sides-visiting">${translations.en["label-printing"]}</label>
+                        <select id="printing-sides-visiting" name="printing_sides" onchange="calculateVisitingCardPrice()">
+                            <option value="1 Side">1 Side</option>
+                            <option value="2 Sides">2 Sides</option>
+                        </select>
+                    </div>
+                    <div class="modal-option">
+                        <label for="quantity-visiting">${translations.en["label-quantity"]}</label>
+                        <select id="quantity-visiting" name="quantity" onchange="calculateVisitingCardPrice()">
+                            <option value="1000">1000</option>
+                            <option value="2000">2000</option>
+                        </select>
+                    </div>
+                `;
+            } else if (cardCategory === 'Gold Foil Visiting Card') {
+                optionsHTML = `
+                    <div class="modal-option">
+                        <label for="printing-sides-visiting">${translations.en["label-printing"]}</label>
+                        <select id="printing-sides-visiting" name="printing_sides" onchange="calculateVisitingCardPrice()">
+                            <option value="1 Side">1 Side</option>
+                            <option value="2 Sides">2 Sides</option>
+                        </select>
+                    </div>
+                    <div class="modal-option">
+                        <label for="quantity-visiting">${translations.en["label-quantity"]}</label>
+                        <select id="quantity-visiting" name="quantity" onchange="calculateVisitingCardPrice()">
+                            <option value="500">500</option>
+                            <option value="1000">1000</option>
+                        </select>
+                    </div>
+                `;
+            }
+
+            optionsContainer.innerHTML = optionsHTML;
+            calculateVisitingCardPrice();
+        }
+
+        function calculateVisitingCardPrice() {
+            const cardCategory = document.getElementById('card-category-visiting').value;
+            let printingSides = document.getElementById('printing-sides-visiting')?.value;
+            const lamination = document.getElementById('lamination-visiting')?.value;
+            const quantity = parseInt(document.getElementById('quantity-visiting')?.value);
+
+            let priceKey = printingSides;
+            if (cardCategory === 'Plastic Visiting Card') {
+                priceKey = lamination;
+            }
+
+            const price = visitingCardPricing[cardCategory]?.[priceKey]?.[quantity] || 0;
+            modalPriceDisplay.textContent = price ? `Total Price: ₹${price}` : 'Price not available';
+        }
+
+        function calculateBillBookPrice() {
+            const size = document.getElementById('size-bill').value;
+            const paperQuality = document.getElementById('paper-quality-bill').value;
+            const binding = document.getElementById('binding-bill').value;
+            const sheetsPerBook = document.getElementById('sheets-per-book-bill').value;
+            const quantity = parseInt(document.getElementById('quantity-bill').value);
+            const key = `${size}_${paperQuality}_${binding}_${sheetsPerBook}`;
+            const price = billBookPricing[key]?.[quantity] || 0;
+            modalPriceDisplay.textContent = price ? `Total Price: ₹${price}` : 'Price not available';
+        }
+
+        function calculateLetterPadPrice() {
+            const size = document.getElementById('size-letter').value;
+            const paperQuality = document.getElementById('paper-quality-letter').value;
+            const printingLocation = document.getElementById('printing-location-letter').value;
+            const quantity = parseInt(document.getElementById('quantity-letter').value);
+            const key = `${size}_${paperQuality}_${printingLocation}`;
+            const price = letterPadPricing[key]?.[quantity] || 0;
+            modalPriceDisplay.textContent = price ? `Total Price: ₹${price}` : 'Price not available';
+        }
+
+        function calculateHandbillPrice() {
+            const size = document.getElementById('size-handbill').value;
+            const paperQuality = document.getElementById('paper-quality-handbill').value;
+            const printingSides = document.getElementById('printing-sides-handbill').value;
+            const quantity = parseInt(document.getElementById('quantity-handbill').value);
+            const key = `${size}_${paperQuality}_${printingSides}`;
+            const price = handbillPricing[key]?.[quantity] || 0;
+            modalPriceDisplay.textContent = price ? `Total Price: ₹${price}` : 'Price not available';
+        }
+
+        function calculatePosterPrice() {
+            const size = document.getElementById('size-poster').value;
+            const material = document.getElementById('material-poster').value;
+            const lamination = document.getElementById('lamination-poster').value;
+            const quantity = parseInt(document.getElementById('quantity-poster').value);
+            const key = `${size}_${material}_${lamination}`;
+            const price = posterPricing[key]?.[quantity] || 0;
+            modalPriceDisplay.textContent = price ? `Total Price: ₹${price}` : 'Price not available';
+        }
+
+        function calculateEnvelopePrice() {
+            const size = document.getElementById('size-envelope').value;
+            const paperQuality = document.getElementById('paper-quality-envelope').value;
+            const printingLocation = document.getElementById('printing-location-envelope').value;
+            const quantity = parseInt(document.getElementById('quantity-envelope').value);
+            const key = `${size}_${paperQuality}_${printingLocation}`;
+            const price = envelopePricing[key]?.[quantity] || 0;
+            modalPriceDisplay.textContent = price ? `Total Price: ₹${price}` : 'Price not available';
+        }
+
+        function openModal(service) {
+            const serviceData = services[service];
+            modalTitle.textContent = translations.en[serviceData.title];
+            modalDescription.innerHTML = serviceData.description;
+            modalPriceDisplay.textContent = '';
+            if (service === 'visiting') updateVisitingCardOptions();
+            if (service === 'bill') calculateBillBookPrice();
+            if (service === 'letter') calculateLetterPadPrice();
+            if (service === 'handbill') calculateHandbillPrice();
+            if (service === 'poster') calculatePosterPrice();
+            if (service === 'envelope') calculateEnvelopePrice();
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        function sendWhatsApp(service) {
+            const options = {};
+            const modalOptions = document.querySelectorAll(`#modal .modal-option select, #modal .modal-option textarea`);
+            modalOptions.forEach(input => {
+                options[input.name] = input.value;
+            });
+
+            let message = `Hello, I would like to order the following ${translations.en[`${service}-title`]}:\n`;
+            for (const [key, value] of Object.entries(options)) {
+                const label = translations.en[`label-${key.replace('_', '-')}`] || key.replace('_', ' ');
+                message += `${label}: ${value}\n`;
+            }
+
+            const priceText = modalPriceDisplay.textContent;
+            if (priceText && priceText !== 'Price not available') {
+                message += `\n${priceText}\n`;
+            }
+
+            message += `\nPlease provide further details or confirm the order.`;
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/+919838644687?text=${encodedMessage}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                closeModal();
+            }
+        };
+    </script>
+</body>
+</html>
